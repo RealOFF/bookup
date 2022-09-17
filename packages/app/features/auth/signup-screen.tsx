@@ -1,6 +1,4 @@
-import { Input, Button, H3, XStack, YStack, Sheet, Popover } from '@bookup/uikit'
-import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
-import React, { useState } from 'react'
+import { Input, Button, H3, XStack, YStack } from '@bookup/uikit'
 import { useLink } from 'solito/link'
 
 export function SignupScreen() {
@@ -17,9 +15,9 @@ export function SignupScreen() {
       </XStack>
 
       <YStack w={'100%'} space="$4" maw={600}>
-        <Input keyboardType='email-address' placeholder='Email' />
-        <Input textContentType='newPassword' placeholder='Password' />
-        <Input textContentType='newPassword' placeholder='Repeat password' />
+        <Input keyboardType="email-address" placeholder="Email" />
+        <Input textContentType="newPassword" placeholder="Password" />
+        <Input textContentType="newPassword" placeholder="Repeat password" />
         <Button {...linkProps}>Signup</Button>
       </YStack>
     </YStack>

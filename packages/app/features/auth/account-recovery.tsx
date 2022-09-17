@@ -1,21 +1,19 @@
 import { Input, Button, H3, YStack, Text, ButtonText } from '@bookup/uikit'
 import React, { useState } from 'react'
-import { useForm, Controller } from "react-hook-form"
+import { useForm, Controller } from 'react-hook-form'
 
 const FillCodeBlock = () => {
   const { control, handleSubmit } = useForm({
     defaultValues: {
-      code: ''
-    }
+      code: '',
+    },
   })
 
-  const onSubmit = data => console.log(data)
+  const onSubmit = (data) => console.log(data)
 
   return (
     <YStack space="$2">
-      <Text ta="center">
-        Enter the received code
-      </Text>
+      <Text ta="center">Enter the received code</Text>
       <Controller
         control={control}
         rules={{
@@ -26,8 +24,8 @@ const FillCodeBlock = () => {
         render={({ field: { onChange, onBlur, value } }) => (
           //TODO rework to 5 inputs
           <Input
-            textContentType='postalCode'
-            keyboardType='number-pad'
+            textContentType="postalCode"
+            keyboardType="number-pad"
             placeholder="code"
             onBlur={onBlur}
             onChangeText={onChange}
@@ -39,9 +37,7 @@ const FillCodeBlock = () => {
       <ButtonText mt="$1" ta="center">
         Send code again
       </ButtonText>
-      <Button onClick={() => handleSubmit(onSubmit)}>
-        Accept
-      </Button>
+      <Button onClick={() => handleSubmit(onSubmit)}>Accept</Button>
     </YStack>
   )
 }
@@ -59,14 +55,15 @@ export function AccountRecoveryScreen() {
       </YStack>
 
       <YStack w={'100%'} space="$4" maw={600}>
-        <Input placeholder='Email' />
-        {isSent ?
-          <FillCodeBlock /> :
+        <Input placeholder="Email" />
+        {isSent ? (
+          <FillCodeBlock />
+        ) : (
           <>
             <Text ta="center">We will send recovery code to your email</Text>
             <Button onClick={handleSend}>Send</Button>
           </>
-        }
+        )}
       </YStack>
     </YStack>
   )

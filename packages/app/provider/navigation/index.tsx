@@ -17,9 +17,9 @@ export function NavigationProvider({
             screens: {
               home: '',
               'user-detail': 'user/:id',
-              'login': 'auth/login',
-              'signup': 'auth/signup',
-              'account-recovery': 'auth/account-recovery'
+              login: 'auth/login',
+              signup: 'auth/signup',
+              'account-recovery': 'auth/account-recovery',
             },
           },
         }),

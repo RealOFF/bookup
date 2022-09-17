@@ -17,7 +17,10 @@
     "build": "tamagui-build",
     "watch": "tamagui-build --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@babel/core": "^7.19.1",

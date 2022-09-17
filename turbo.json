@@ -3,6 +3,13 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**"]
-    }
+    },
+    "test": {
+      "outputs": ["coverage/**"],
+      "dependsOn": ["build"],
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts"],
+      "outputMode": "full"
+    },
+    "lint": {}
   }
 }

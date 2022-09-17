@@ -13,12 +13,14 @@ export function LoginScreen() {
         <H3 ta="center">Create new password</H3>
       </YStack>
       <YStack w={'100%'} space="$4" maw={600}>
-        <Input textContentType='newPassword' placeholder='New password' />
-        <Input textContentType='newPassword' placeholder='Repeat new password' />
+        <Input textContentType="newPassword" placeholder="New password" />
+        <Input
+          textContentType="newPassword"
+          placeholder="Repeat new password"
+        />
         <Button {...loginLinkProps}>Recovery</Button>
       </YStack>
-      <XStack>
-      </XStack>
+      <XStack></XStack>
     </YStack>
   )
 }

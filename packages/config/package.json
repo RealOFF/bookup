@@ -8,5 +8,10 @@
     "@tamagui/shorthands": "1.0.1-beta.165",
     "@tamagui/theme-base": "1.0.1-beta.165"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  }
 }

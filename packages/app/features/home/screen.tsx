@@ -1,4 +1,13 @@
-import { Anchor, Button, H1, Paragraph, Separator, XStack, YStack, Sheet } from '@bookup/uikit'
+import {
+  Anchor,
+  Button,
+  H1,
+  Paragraph,
+  Separator,
+  XStack,
+  YStack,
+  Sheet,
+} from '@bookup/uikit'
 import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
 import React, { useState } from 'react'
 import { useLink } from 'solito/link'
@@ -13,8 +22,8 @@ export function HomeScreen() {
       <YStack space="$4" maw={600}>
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
-          Here's a basic starter to show navigating from one screen to another. This screen uses the
-          same code on Next.js and React Native.
+          Here&apos;s a basic starter to show navigating from one screen to
+          another. This screen uses the same code on Next.js and React Native.
         </Paragraph>
         <Separator />
         <Paragraph ta="center">
@@ -23,7 +32,11 @@ export function HomeScreen() {
             Nate Wienert
           </Anchor>
           , give it a star{' '}
-          <Anchor href="https://github.com/tamagui/tamagui" target="_blank" rel="noreferrer">
+          <Anchor
+            href="https://github.com/tamagui/tamagui"
+            target="_blank"
+            rel="noreferrer"
+          >
             on Github
           </Anchor>
           .

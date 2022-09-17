@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "cd .. && yarn build && cd next && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@tamagui/next-theme": "1.0.1-beta.165",

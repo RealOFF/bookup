@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
 
   const contents = useMemo(() => {
     return <Component {...pageProps} />
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageProps])
 
   return (

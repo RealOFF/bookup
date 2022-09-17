@@ -16,5 +16,10 @@
     "expo-linking": "^3.2.2",
     "solito": "^0.0.26"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  }
 }

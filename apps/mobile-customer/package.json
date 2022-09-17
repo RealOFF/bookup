@@ -34,7 +34,10 @@
     "android": "TAMAGUI_TARGET=native yarn expo run:android",
     "ios": "TAMAGUI_TARGET=native yarn expo run:ios",
     "web": "TAMAGUI_TARGET=web yarn expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "main": "index.js",
   "version": "1.0.0",

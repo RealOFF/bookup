@@ -1,0 +1,9 @@
+# Add files here to ignore them from prettier formatting
+
+/**/assets/
+/**/.expo/
+/**/.next/
+/**/node_modules/
+/**/.yarn/
+/**/dist/
+/**/coverage/
