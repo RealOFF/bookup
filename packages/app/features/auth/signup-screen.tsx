@@ -1,4 +1,4 @@
-import { Input, Button, H3, XStack, YStack, Sheet, Popover } from '@my/ui'
+import { Input, Button, H3, XStack, YStack, Sheet, Popover } from '@bookup/uikit'
 import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
 import React, { useState } from 'react'
 import { useLink } from 'solito/link'

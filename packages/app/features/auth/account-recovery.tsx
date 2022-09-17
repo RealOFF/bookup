@@ -1,4 +1,4 @@
-import { Input, Button, H3, YStack, Text, ButtonText } from '@my/ui'
+import { Input, Button, H3, YStack, Text, ButtonText } from '@bookup/uikit'
 import React, { useState } from 'react'
 import { useForm, Controller } from "react-hook-form"
 

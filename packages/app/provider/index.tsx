@@ -1,6 +1,6 @@
 import config from '../tamagui.config'
 import { NavigationProvider } from './navigation'
-import { TamaguiProvider, TamaguiProviderProps } from '@my/ui'
+import { TamaguiProvider, TamaguiProviderProps } from '@bookup/uikit'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   return (

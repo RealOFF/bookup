@@ -22,7 +22,7 @@ module.exports = {
       loader: 'tamagui-loader',
       options: {
         config: './tamagui.config.ts',
-        components: ['@my/ui', 'tamagui'],
+        components: ['@bookup/uikit', 'tamagui'],
       },
     });
 

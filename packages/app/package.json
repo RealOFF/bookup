@@ -1,10 +1,10 @@
 {
   "version": "0.0.0",
-  "name": "app",
+  "name": "@bookup/app",
   "main": "index.ts",
   "dependencies": {
-    "@my/config": "*",
-    "@my/ui": "*",
+    "@bookup/config": "*",
+    "@bookup/uikit": "*",
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
     "@tamagui/animations-react-native": "1.0.1-beta.165",

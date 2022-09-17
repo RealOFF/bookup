@@ -1,4 +1,4 @@
-import { Anchor, Button, H1, Paragraph, Separator, XStack, YStack, Sheet } from '@my/ui'
+import { Anchor, Button, H1, Paragraph, Separator, XStack, YStack, Sheet } from '@bookup/uikit'
 import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
 import React, { useState } from 'react'
 import { useLink } from 'solito/link'

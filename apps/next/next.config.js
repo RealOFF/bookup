@@ -18,11 +18,11 @@ const transform = withPlugins([
     'expo-linking',
     'expo-constants',
     'expo-modules-core',
-    '@my/config',
+    '@bookup/config',
   ]),
   withTamagui({
     config: './tamagui.config.ts',
-    components: ['tamagui', '@my/ui'],
+    components: ['tamagui', '@bookup/uikit'],
     importsWhitelist: ['constants.js', 'colors.js'],
     logTimings: true,
     disableExtraction,

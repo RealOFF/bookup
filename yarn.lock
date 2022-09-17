@@ -3174,6 +3174,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bookup/config@*, @bookup/config@workspace:packages/config":
+  version: 0.0.0-use.local
+  resolution: "@bookup/config@workspace:packages/config"
+  dependencies:
+    "@tamagui/animations-react-native": 1.0.1-beta.165
+    "@tamagui/font-inter": 1.0.1-beta.165
+    "@tamagui/shorthands": 1.0.1-beta.165
+    "@tamagui/theme-base": 1.0.1-beta.165
+  languageName: unknown
+  linkType: soft
+
+"@bookup/uikit@*, @bookup/uikit@workspace:packages/uikit":
+  version: 0.0.0-use.local
+  resolution: "@bookup/uikit@workspace:packages/uikit"
+  dependencies:
+    "@babel/core": ^7.19.1
+    "@bookup/config": "*"
+    "@expo/webpack-config": ^0.17.0
+    "@mdx-js/react": ^1.6.22
+    "@storybook/addon-actions": ^6.5.12
+    "@storybook/addon-docs": ^6.5.12
+    "@storybook/addon-essentials": ^6.5.12
+    "@storybook/addon-interactions": ^6.5.12
+    "@storybook/addon-links": ^6.5.12
+    "@storybook/addon-react-native-web": ^0.0.18
+    "@storybook/builder-webpack5": ^6.5.12
+    "@storybook/manager-webpack5": ^6.5.12
+    "@storybook/react": ^6.5.12
+    "@storybook/testing-library": ^0.0.13
+    "@tamagui/build": ^1.0.1-beta.165
+    "@tamagui/use-debounce": ^1.0.1-beta.165
+    "@tamagui/use-force-update": ^1.0.1-beta.165
+    "@tamagui/use-window-size": ^1.0.1-beta.165
+    babel-loader: ^8.2.5
+    react-native-reanimated: ^2.10.0
+    react-native-web: ^0.18.9
+    tamagui: ^1.0.1-beta.165
+    tamagui-loader: ^1.0.1-beta.165
+  languageName: unknown
+  linkType: soft
+
 "@changesets/types@npm:^0.4.0":
   version: 0.4.0
   resolution: "@changesets/types@npm:0.4.0"
@@ -4208,47 +4249,6 @@ __metadata:
   checksum: d3b82b29368821154ce8e10bef5ccdbfd070d3e9601643c99ea4607e56f3daeaa4e755dd6d2355da20762c695c1b0570543d9f84b48f70c211ec09c4aaada2e1
   languageName: node
   linkType: hard
-
-"@my/config@*, @my/config@workspace:packages/config":
-  version: 0.0.0-use.local
-  resolution: "@my/config@workspace:packages/config"
-  dependencies:
-    "@tamagui/animations-react-native": 1.0.1-beta.165
-    "@tamagui/font-inter": 1.0.1-beta.165
-    "@tamagui/shorthands": 1.0.1-beta.165
-    "@tamagui/theme-base": 1.0.1-beta.165
-  languageName: unknown
-  linkType: soft
-
-"@my/ui@*, @my/ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "@my/ui@workspace:packages/ui"
-  dependencies:
-    "@babel/core": ^7.19.1
-    "@expo/webpack-config": ^0.17.0
-    "@mdx-js/react": ^1.6.22
-    "@my/config": "*"
-    "@storybook/addon-actions": ^6.5.12
-    "@storybook/addon-docs": ^6.5.12
-    "@storybook/addon-essentials": ^6.5.12
-    "@storybook/addon-interactions": ^6.5.12
-    "@storybook/addon-links": ^6.5.12
-    "@storybook/addon-react-native-web": ^0.0.18
-    "@storybook/builder-webpack5": ^6.5.12
-    "@storybook/manager-webpack5": ^6.5.12
-    "@storybook/react": ^6.5.12
-    "@storybook/testing-library": ^0.0.13
-    "@tamagui/build": ^1.0.1-beta.165
-    "@tamagui/use-debounce": ^1.0.1-beta.165
-    "@tamagui/use-force-update": ^1.0.1-beta.165
-    "@tamagui/use-window-size": ^1.0.1-beta.165
-    babel-loader: ^8.2.5
-    react-native-reanimated: ^2.10.0
-    react-native-web: ^0.18.9
-    tamagui: ^1.0.1-beta.165
-    tamagui-loader: ^1.0.1-beta.165
-  languageName: unknown
-  linkType: soft
 
 "@next/env@npm:12.2.4":
   version: 12.2.4
@@ -8340,8 +8340,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
-    "@my/config": "*"
-    "@my/ui": "*"
+    "@bookup/config": "*"
+    "@bookup/uikit": "*"
     "@react-navigation/native": ^6.0.11
     "@react-navigation/native-stack": ^6.7.0
     "@tamagui/animations-react-native": 1.0.1-beta.165

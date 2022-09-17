@@ -1,5 +1,5 @@
 {
-  "name": "@my/ui",
+  "name": "@bookup/uikit",
   "version": "0.0.1",
   "sideEffects": [
     "*.css"
@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "@babel/core": "^7.19.1",
+    "@bookup/config": "*",
     "@expo/webpack-config": "^0.17.0",
-    "@my/config": "*",
     "@storybook/addon-react-native-web": "^0.0.18",
     "@tamagui/use-debounce": "^1.0.1-beta.165",
     "@tamagui/use-force-update": "^1.0.1-beta.165",

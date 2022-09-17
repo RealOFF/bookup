@@ -30,7 +30,7 @@ The main apps are:
 - `next` (web)
 
 - `packages` shared packages across apps
-  - `ui` includes your custom UI kit that will be optimized by Tamagui
+  - `uikit` includes your custom UI kit that will be optimized by Tamagui
   - `app` you'll be importing most files from `app/`
     - `features` (don't use a `screens` folder. organize by feature.)
     - `provider` (all the providers that wrap the app, and some no-ops for Web.)
@@ -49,7 +49,7 @@ You can add other folders inside of `packages/` if you know what you're doing an
 
 ## Developing
 
-We've added `packages/ui` to show an example of [building your own design system](https://tamagui.dev/docs/guides/design-systems).
+We've added `packages/uikit` to show an example of [building your own design system](https://tamagui.dev/docs/guides/design-systems).
 
 You need to watch it to have changes propagate, we've added a root `watch` command you should run in a separate terminal alongside the apps:
 
@@ -69,7 +69,7 @@ You'll see lots of output including the compiled HTML, CSS and all the steps it 
 
 Note we're following the [design systems guide](https://tamagui.dev/docs/guides/design-systems) and creating our own package for components.
 
-See `packages/ui` named `@my/ui` for how this works.
+See `packages/uikit` named `@bookup/uikit` for how this works.
 
 ## 🆕 Add new dependencies
 

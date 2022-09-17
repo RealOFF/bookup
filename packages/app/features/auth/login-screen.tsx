@@ -1,4 +1,4 @@
-import { Input, Button, H3, XStack, YStack, Text, ButtonText } from '@my/ui'
+import { Input, Button, H3, XStack, YStack, Text, ButtonText } from '@bookup/uikit'
 import { Facebook } from '@tamagui/feather-icons'
 import React from 'react'
 import { useLink } from 'solito/link'
