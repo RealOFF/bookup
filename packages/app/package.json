@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "@bookup/app",
+  "name": "app",
   "main": "index.ts",
   "dependencies": {
     "@bookup/config": "*",
