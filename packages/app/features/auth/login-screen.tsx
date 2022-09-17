@@ -4,7 +4,7 @@ import {
   H3,
   XStack,
   YStack,
-  Text,
+  Paragraph,
   ButtonText,
 } from '@bookup/uikit'
 
@@ -35,7 +35,7 @@ export function LoginScreen() {
       </YStack>
       <XStack jc="center" ai="center">
         <ButtonText {...signupLinkProps}>Create account</ButtonText>
-        <Text> or login with:</Text>
+        <Paragraph> or login with:</Paragraph>
       </XStack>
       <XStack></XStack>
     </YStack>

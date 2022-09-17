@@ -1,4 +1,4 @@
-import { Input, Button, H3, YStack, Text, ButtonText } from '@bookup/uikit'
+import { Input, Button, H3, YStack, Paragraph, ButtonText } from '@bookup/uikit'
 import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 
@@ -13,7 +13,7 @@ const FillCodeBlock = () => {
 
   return (
     <YStack space="$2">
-      <Text ta="center">Enter the received code</Text>
+      <Paragraph ta="center">Enter the received code</Paragraph>
       <Controller
         control={control}
         rules={{
