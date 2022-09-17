@@ -40,7 +40,7 @@
   },
   "pluginsConfig": {
     "@nrwl/js": {
-      "analyzeSourceFiles": false
+      "analyzeSourceFiles": true
     }
   }
 }

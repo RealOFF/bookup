@@ -5,3 +5,5 @@
 //   name: 'Button'
 //   bg: 'black'
 // })
+
+export {}
