@@ -29,6 +29,7 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-hook-form": "^7.35.0",
+    "react-native-calendars": "^1.1289.0",
     "react-native-svg": "12.3.0",
     "react-native-web": "~0.18.7"
   },

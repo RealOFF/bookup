@@ -7,7 +7,7 @@ import {
   Text,
   ButtonText,
 } from '@bookup/uikit'
-import React from 'react'
+
 import { useLink } from 'solito/link'
 
 export function LoginScreen() {
