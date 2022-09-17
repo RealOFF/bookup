@@ -1,11 +1,11 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import { HomeScreen } from '../../features/home/screen'
-import { UserDetailScreen } from '../../features/user/detail-screen'
-import { LoginScreen } from '../../features/auth/login-screen'
-import { SignupScreen } from '../../features/auth/signup-screen'
-import { AccountRecoveryScreen } from '../../features/auth/account-recovery'
+import { HomeScreen } from 'app/features/home/screen'
+import { UserDetailScreen } from 'app/features/user/detail-screen'
+import { LoginScreen } from 'app/features/auth/login-screen'
+import { SignupScreen } from 'app/features/auth/signup-screen'
+import { AccountRecoveryScreen } from 'app/features/auth/account-recovery'
 
 const Stack = createNativeStackNavigator<{
   home: undefined
