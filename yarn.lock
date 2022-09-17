@@ -18739,9 +18739,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-app@workspace:apps/next":
+"next-app@workspace:apps/web-master":
   version: 0.0.0-use.local
-  resolution: "next-app@workspace:apps/next"
+  resolution: "next-app@workspace:apps/web-master"
   dependencies:
     "@tamagui/next-plugin": 1.0.1-beta.165
     "@tamagui/next-theme": 1.0.1-beta.165

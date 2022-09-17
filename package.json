@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "native": "yarn build && cd apps/mobile-customer && yarn start",
-    "web": "yarn build && cd apps/next && yarn next",
+    "web": "yarn build && cd apps/web-master && yarn next",
     "web:prod": "yarn workspace next-app build",
     "watch": "yarn workspaces foreach -pi run watch",
     "postinstall": "yarn build",
