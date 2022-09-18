@@ -3,9 +3,24 @@ const requests = [
     id: 0,
     start: Date.now(),
     user: {
+      id: 1,
       firstName: 'Mike',
       lastName: 'Brintenburg'
     },
+    socials: [
+      {
+        type: 'telegram',
+        url: 'https://google.com'
+      },
+      {
+        type: 'whatsapp',
+        url: 'https://google.com'
+      },
+      {
+        type: 'viber',
+        url: 'https://google.com'
+      }
+    ],
     services: [
       {
         name: 'Some service',
@@ -38,9 +53,24 @@ const requests = [
     id: 1,
     start: Date.now(),
     user: {
+      id: 1,
       firstName: 'Mike',
       lastName: 'Brintenburg'
     },
+    socials: [
+      {
+        type: 'telegram',
+        url: 'https://google.com'
+      },
+      {
+        type: 'whatsapp',
+        url: 'https://google.com'
+      },
+      {
+        type: 'viber',
+        url: 'https://google.com'
+      }
+    ],
     services: [
       {
         name: 'Some service',
@@ -73,9 +103,24 @@ const requests = [
     id: 2,
     start: Date.now(),
     user: {
+      id: 2,
       firstName: 'Mike',
       lastName: 'Brintenburg'
     },
+    socials: [
+      {
+        type: 'telegram',
+        url: 'https://google.com'
+      },
+      {
+        type: 'whatsapp',
+        url: 'https://google.com'
+      },
+      {
+        type: 'viber',
+        url: 'https://google.com'
+      }
+    ],
     services: [
       {
         name: 'Some service',
@@ -106,8 +151,17 @@ const requests = [
   }
 ]
 
-export const useRequests = () => {
-  return { data: requests }
+type RequestQueryParams = {
+  userId: number
+}
+
+export const useRequests = (params?: RequestQueryParams) => {
+
+  return {
+    data: params?.userId ?
+      requests.filter(({ user }) => user.id === params?.userId) :
+      requests
+  }
 }
 
 export const useRequest = (id: number) => {
