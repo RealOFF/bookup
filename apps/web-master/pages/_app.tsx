@@ -5,7 +5,7 @@ import '@tamagui/font-inter/css/700.css'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import { Main } from '@bookup/uikit'
 import { Provider } from 'app/provider'
-import { MainMenuMobile } from 'app/features/menu'
+import { MainMenu } from 'app/features/menu'
 import Head from 'next/head'
 import React, { PropsWithChildren, useMemo } from 'react'
 import type { SolitoAppProps } from 'solito'
@@ -15,7 +15,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
   return (
     <Main pb='$7'>
       {children}
-      <MainMenuMobile />
+      <MainMenu />
     </Main>
   )
 }
