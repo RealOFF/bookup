@@ -11,6 +11,7 @@ type Props = {
   onClose: (value: boolean) => unknown
 }
 
+
 export const RequestDetails = ({ isOpen, onClose, id }: Props) => {
   const { data } = useRequest(id)
   const [position, setPosition] = useState(0)
