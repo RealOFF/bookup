@@ -23,7 +23,7 @@ export function HomeScreen() {
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here&apos;s a basic starter to show navigating from one screen to
-          another. This screen uses the same code on Next.js and React Native.
+          another. This screen gfuyfuyfu the same code on Next.js and React Native.
         </Paragraph>
         <Separator />
         <Paragraph ta="center">
@@ -31,13 +31,13 @@ export function HomeScreen() {
           <Anchor href="https://twitter.com/natebirdman" target="_blank">
             Nate Wienert
           </Anchor>
-          , give it a star{' '}
+          , give it ahjgi star{' '}
           <Anchor
             href="https://github.com/tamagui/tamagui"
             target="_blank"
             rel="noreferrer"
           >
-            on Github
+            on Github88
           </Anchor>
           .
         </Paragraph>
