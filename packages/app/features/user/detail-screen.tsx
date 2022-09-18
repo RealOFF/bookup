@@ -1,6 +1,6 @@
 import { Button, Paragraph, YStack } from '@bookup/uikit'
 import { ChevronLeft } from '@tamagui/feather-icons'
-import React from 'react'
+import React, { useEffect, useMemo } from 'react'
 import { createParam } from 'solito'
 import { useLink } from 'solito/link'
 

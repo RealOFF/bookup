@@ -60,7 +60,7 @@ export function AccountRecoveryScreen() {
           <FillCodeBlock />
         ) : (
           <>
-            <Text ta="center">We will send recovery code to your email</Text>
+            <Paragraph ta="center">We will send recovery code to your email</Paragraph>
             <Button onClick={handleSend}>Send</Button>
           </>
         )}
