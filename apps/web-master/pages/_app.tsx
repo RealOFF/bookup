@@ -3,11 +3,22 @@ import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
 
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
+import { Main } from '@bookup/uikit'
 import { Provider } from 'app/provider'
+import { MainMenuMobile } from 'app/features/menu'
 import Head from 'next/head'
-import React, { useMemo } from 'react'
+import React, { PropsWithChildren, useMemo } from 'react'
 import type { SolitoAppProps } from 'solito'
 import 'raf/polyfill'
+
+const Layout = ({ children }: PropsWithChildren<{}>) => {
+  return (
+    <Main pb='$7'>
+      {children}
+      <MainMenuMobile />
+    </Main>
+  )
+}
 
 function MyApp({ Component, pageProps }: SolitoAppProps) {
   const [theme, setTheme] = useRootTheme()
@@ -26,7 +37,9 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
       </Head>
       <NextThemeProvider onChangeTheme={setTheme}>
         <Provider disableRootThemeClass defaultTheme={theme}>
-          {contents}
+          <Layout>
+            {contents}
+          </Layout>
         </Provider>
       </NextThemeProvider>
     </>

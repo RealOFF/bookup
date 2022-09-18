@@ -1,31 +1,43 @@
-import { XGroup, } from "@bookup/uikit"
-import Button from "@bookup/uikit/dist/cjs/components/Button"
+import { XGroup, Button } from "@bookup/uikit"
 import { Calendar, Grid, Bell, User } from '@tamagui/feather-icons'
+import { useRouter } from "solito/router"
 
 const menuItems = [
   {
     id: 0,
-    icon: Calendar
+    icon: Calendar,
+    url: '/calendar'
   },
   {
     id: 1,
-    icon: Grid
+    icon: Grid,
+    url: '/home'
   },
   {
     id: 2,
-    icon: Bell
+    icon: Bell,
+    url: '/notifications'
   },
   {
     id: 3,
-    icon: User
+    icon: User,
+    utl: '/user'
   }
 ]
 
 export const MainMenuMobile = () => {
+  const { push } = useRouter()
+
   return (
-    <XGroup space>
-      {menuItems.map(({ icon, id }) =>
-        <Button key={id} icon={icon}></Button>
+    <XGroup
+      style={{ position: 'fixed' } as any}
+      bbrr='0'
+      bblr='0'
+      w='100%'
+      b='0'
+    >
+      {menuItems.map(({ icon, id, url }) =>
+        <Button onClick={() => push({ pathname: url })} f={1} key={id} icon={icon} />
       )}
     </XGroup>
   )
