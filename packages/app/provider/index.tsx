@@ -1,5 +1,4 @@
 import config from '../tamagui.config'
-import { NavigationProvider } from './navigation'
 import { TamaguiProvider, TamaguiProviderProps } from '@bookup/uikit'
 
 export function Provider({
@@ -13,7 +12,7 @@ export function Provider({
       defaultTheme="light"
       {...rest}
     >
-      <NavigationProvider>{children}</NavigationProvider>
+      {children}
     </TamaguiProvider>
   )
 }
