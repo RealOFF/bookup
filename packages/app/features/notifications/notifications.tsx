@@ -3,7 +3,7 @@ import { useMemo } from 'react'
 
 import { UnderlineMenu } from 'app/features/menu'
 import { useState } from "react"
-import { Requests } from "../requests/requests"
+import { Requests } from "app/features/requests"
 
 const menuItems = [
   {
