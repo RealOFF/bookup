@@ -1,9 +1,9 @@
 import { H3, YStack } from "tamagui"
-import { useCallback, useMemo } from 'react'
+import { useMemo } from 'react'
 
 import { UnderlineMenu } from 'app/features/menu'
 import { useState } from "react"
-import { Requests } from "./requests/requests"
+import { Requests } from "../requests/requests"
 
 const menuItems = [
   {
@@ -24,10 +24,14 @@ export const Notifications = () => {
   const Content = useMemo(() => ([Requests][selected] || (() => null)), [])
 
   return (
-    <YStack ai="center" py="$5" space>
-      <H3 ta="center">Notifications</H3>
-      <UnderlineMenu onItemClick={onMenuItemClick} items={menuItems} />
-      <Content />
+    <YStack ai="center" pt="$5">
+      <YStack>
+        <H3 mb="$5" ta="center">Notifications</H3>
+        <UnderlineMenu onItemClick={onMenuItemClick} items={menuItems} />
+      </YStack>
+      <YStack w="100%" bg="$gray3">
+        <Content />
+      </YStack>
     </YStack>
   )
 }

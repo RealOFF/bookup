@@ -1,7 +1,7 @@
 export const timestampToDateString = (timestamp: number) =>
   new Intl.DateTimeFormat(
     'en-GB',
-    { dateStyle: 'full', timeStyle: 'short' }
+    { dateStyle: 'medium', timeStyle: 'short' }
   ).format(new Date(timestamp))
 
 export const timestampToTimeString = (timestamp) =>
