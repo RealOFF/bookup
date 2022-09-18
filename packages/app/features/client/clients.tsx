@@ -2,9 +2,21 @@ import { YStack, ListItem, Separator, Input, H3 } from '@bookup/uikit'
 import { ChevronRight } from '@tamagui/feather-icons'
 
 import { useUsers, UserImage } from 'app/features/user'
+import { useLink } from 'solito/link'
+import { useRouter } from 'solito/router'
 
 export const Clients = () => {
   const { data: clients } = useUsers()
+  const { push } = useRouter()
+
+  const handleClick = (index) => {
+    push({
+      pathname: 'clients/[id]',
+      query: {
+        id: index
+      }
+    })
+  }
 
   return (
     <YStack py="$5" space>
@@ -15,6 +27,7 @@ export const Clients = () => {
           <>
             {index !== 0 ? <Separator /> : null}
             <ListItem
+              onClick={() => handleClick(index)}
               key={phoneNumber}
               hoverTheme
               pressTheme

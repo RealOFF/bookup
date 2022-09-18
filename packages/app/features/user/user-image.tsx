@@ -8,7 +8,7 @@ type Props = {
 export const UserImage = ({ image, letter }: Props) => {
   return (image ?
     <Image width={56} height={56} src={image} /> :
-    <Circle size={56} bc="$gray11" elevation="$4" >
+    <Circle size={56} bc="$gray8" elevation="$4" >
       <Paragraph>
         {letter}
       </Paragraph>
