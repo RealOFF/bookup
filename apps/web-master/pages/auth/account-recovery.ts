@@ -1,3 +1,3 @@
-import { AccountRecoveryScreen } from 'app/features/auth/account-recovery'
+import { AccountRecoveryScreen } from 'app/features/auth'
 
 export default AccountRecoveryScreen

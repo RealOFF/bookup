@@ -1,3 +1,3 @@
-import { CreateNewPassword } from 'app/features/auth/create-new-password'
+import { CreateNewPasswordScreen } from 'app/features/auth'
 
-export default CreateNewPassword
+export default CreateNewPasswordScreen

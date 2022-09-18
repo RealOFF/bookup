@@ -11,7 +11,7 @@ const menuItems = [
   {
     id: 1,
     icon: Grid,
-    url: '/home'
+    url: '/'
   },
   {
     id: 2,
@@ -21,11 +21,11 @@ const menuItems = [
   {
     id: 3,
     icon: User,
-    utl: '/user'
+    url: '/profile'
   }
 ]
 
-export const MainMenuMobile = () => {
+export const MainMenu = () => {
   const { push } = useRouter()
 
   return (

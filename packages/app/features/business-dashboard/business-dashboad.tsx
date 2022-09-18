@@ -3,7 +3,7 @@ import { useLink } from 'solito/link'
 
 export const BusinessDashboard = () => {
   const clientsLinkProps = useLink({
-    href: '/home/clients',
+    href: '/clients',
   })
 
   return (
