@@ -6,6 +6,7 @@ import {
   XStack,
   YStack,
   H4,
+  useTheme,
 } from '@bookup/uikit'
 import {
   Tag,
@@ -18,45 +19,46 @@ import {
 import { useLink } from 'solito/link'
 
 const StyledButton = (props: ButtonProps) => (
-  <Button {...props} h='$7' w='33.3%' fd='column' chromeless color='black' />
+  <Button {...props} h='$7' w='33.3%' fd='column' chromeless color='$color' />
 )
 
 export const BusinessDashboard = () => {
+  const theme = useTheme()
   const clientsLinkProps = useLink({
     href: '/clients',
   })
 
   return (
     <YStack w='100%' ai='center'>
-      <YStack px='$3' jc='space-between' w='100%' maw={600}>
+      <YStack py='$4' px='$3' jc='space-between' w='100%' maw={600}>
         <YStack w='100%' space='$6'>
           <H3 ta='center'>Your business</H3>
           <YStack w='100%' dsp='flex'>
             <XStack dsp='flex'>
               <StyledButton {...clientsLinkProps}>
-                <Users color='black' />
+                <Users color={theme.color.variable} />
                 Clients
               </StyledButton>
               <StyledButton>
-                <UserPlus color='black' />
+                <UserPlus color={theme.color.variable} />
                 Visits
               </StyledButton>
               <StyledButton>
-                <Send color='black' />
+                <Send color={theme.color.variable} />
                 Newsletter
               </StyledButton>
             </XStack>
             <XStack dsp='flex'>
               <StyledButton>
-                <Tag color='black' />
+                <Tag color={theme.color.variable} />
                 Discounts
               </StyledButton>
               <StyledButton>
-                <PieChart color='black' />
+                <PieChart color={theme.color.variable} />
                 Analystsp
               </StyledButton>
               <StyledButton>
-                <Gift color='black' />
+                <Gift color={theme.color.variable} />
                 Bonuses
               </StyledButton>
             </XStack>

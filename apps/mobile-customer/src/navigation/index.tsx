@@ -15,21 +15,21 @@ export function NativeNavigation() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="login"
+        name='login'
         component={LoginScreen}
         options={{
           title: 'Login',
         }}
       />
       <Stack.Screen
-        name="signup"
+        name='signup'
         component={SignupScreen}
         options={{
           title: 'Signup',
         }}
       />
       <Stack.Screen
-        name="account-recovery"
+        name='account-recovery'
         component={AccountRecoveryScreen}
         options={{
           title: 'AccountRecovery',

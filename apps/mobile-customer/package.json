@@ -36,6 +36,7 @@
     "web": "TAMAGUI_TARGET=web yarn expo start --web",
     "eject": "expo eject",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

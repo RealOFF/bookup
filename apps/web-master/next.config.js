@@ -20,7 +20,7 @@ const redirects = {
         permanent: true,
       },
     ]
-  }
+  },
 }
 
 const transform = withPlugins([
@@ -57,7 +57,7 @@ const transform = withPlugins([
       'SectionList',
     ],
   }),
-  [redirects]
+  [redirects],
 ])
 
 module.exports = function (name, { defaultConfig }) {

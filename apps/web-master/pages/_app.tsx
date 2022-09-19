@@ -32,14 +32,12 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
     <>
       <Head>
         <title>Bookup</title>
-        <meta name="description" content="Tamagui, Solito, Expo & Next.js" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name='description' content='Tamagui, Solito, Expo & Next.js' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <NextThemeProvider onChangeTheme={setTheme}>
         <Provider disableRootThemeClass defaultTheme={theme}>
-          <Layout>
-            {contents}
-          </Layout>
+          <Layout>{contents}</Layout>
         </Provider>
       </NextThemeProvider>
     </>

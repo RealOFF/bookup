@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
+    'react/jsx-curly-brace-presence': 2,
     'react/react-in-jsx-scope': 0,
     '@typescript-eslint/no-empty-interface': 0,
   },
