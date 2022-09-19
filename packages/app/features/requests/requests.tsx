@@ -6,10 +6,16 @@ export const Requests = () => {
   const { data: requests } = useRequests()
 
   return (
-    <YStack ai='center' py='$5' px='$3' space>
-      {requests.map((item) => (
-        <RequestCard key={`${item.id}`} {...item} />
-      ))}
+    <YStack ai="center" py="$5" px="$3" space>
+      {requests.map((item) =>
+        <RequestCard
+          useUserImage
+          useUserName
+          useInteractable
+          key={`${item.id}`}
+          {...item}
+        />
+      )}
     </YStack>
   )
 }
