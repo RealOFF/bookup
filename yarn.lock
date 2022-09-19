@@ -18739,28 +18739,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-app@workspace:apps/web-master":
-  version: 0.0.0-use.local
-  resolution: "next-app@workspace:apps/web-master"
-  dependencies:
-    "@tamagui/next-plugin": 1.0.1-beta.165
-    "@tamagui/next-theme": 1.0.1-beta.165
-    "@types/node": ^18.6.4
-    app: "*"
-    eslint-config-next: ^12.2.4
-    file-loader: ^6.2.0
-    html-webpack-plugin: ^5.5.0
-    next: ^12.2.4
-    next-compose-plugins: ^2.2.1
-    next-transpile-modules: ^9.0.0
-    raf: ^3.4.1
-    react-native: 0.0.0
-    react-native-web: ^0.18.6
-    react-native-web-lite: ^1.0.1-beta.144
-    url-loader: ^4.1.1
-  languageName: unknown
-  linkType: soft
-
 "next-compose-plugins@npm:^2.2.1":
   version: 2.2.1
   resolution: "next-compose-plugins@npm:2.2.1"
@@ -25803,6 +25781,28 @@ __metadata:
   checksum: 814e9d1ddcc9798f7377ffa448a5a3892232b9275ebb30a41b529607691c0491de47cba426e917a4d08ded3ee7e9ba2f3fe32e62ee3cd9c7d3bafb7754bd553c
   languageName: node
   linkType: hard
+
+"web-master@workspace:apps/web-master":
+  version: 0.0.0-use.local
+  resolution: "web-master@workspace:apps/web-master"
+  dependencies:
+    "@tamagui/next-plugin": 1.0.1-beta.165
+    "@tamagui/next-theme": 1.0.1-beta.165
+    "@types/node": ^18.6.4
+    app: "*"
+    eslint-config-next: ^12.2.4
+    file-loader: ^6.2.0
+    html-webpack-plugin: ^5.5.0
+    next: ^12.2.4
+    next-compose-plugins: ^2.2.1
+    next-transpile-modules: ^9.0.0
+    raf: ^3.4.1
+    react-native: 0.0.0
+    react-native-web: ^0.18.6
+    react-native-web-lite: ^1.0.1-beta.144
+    url-loader: ^4.1.1
+  languageName: unknown
+  linkType: soft
 
 "web-namespaces@npm:^1.0.0":
   version: 1.1.4
