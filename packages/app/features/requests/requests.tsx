@@ -9,6 +9,9 @@ export const Requests = () => {
     <YStack ai="center" py="$5" px="$3" space>
       {requests.map((item) =>
         <RequestCard
+          useUserImage
+          useUserName
+          useInteractable
           key={`${item.id}`}
           {...item}
         />
