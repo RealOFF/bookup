@@ -6,6 +6,7 @@ import {
   YStack,
   Paragraph,
   ButtonText,
+  Square
 } from '@bookup/uikit'
 
 import { useLink } from 'solito/link'
@@ -37,7 +38,13 @@ export function LoginScreen() {
         <ButtonText {...signupLinkProps}>Create account</ButtonText>
         <Paragraph> or login with:</Paragraph>
       </XStack>
-      <XStack></XStack>
+      <XStack space>
+        {new Array(2).fill(0).map(({ type }) =>
+          <YStack ai='center' key={type}>
+            <Square br='$2' size={50} bc="$color" elevation="$4" />
+          </YStack>
+        )}
+      </XStack>
     </YStack>
   )
 }
