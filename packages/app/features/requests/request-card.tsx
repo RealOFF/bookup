@@ -15,6 +15,7 @@ type Props = {
   useUserName?: boolean
   useUserImage?: boolean
   useInteractable?: boolean
+  onStatus?: boolean
   services: {
     name: string
     duration: number
