@@ -1,6 +1,3 @@
-import { Agenda } from 'react-native-calendars'
-import { Stack } from '@bookup/uikit'
-
 export const Calendar = () => {
   return <></>
   // return <Agenda

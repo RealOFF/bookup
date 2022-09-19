@@ -6,12 +6,11 @@ type Props = {
 }
 
 export const UserImage = ({ image, letter }: Props) => {
-  return (image ?
-    <Image width={56} height={56} src={image} /> :
-    <Circle size={56} bc="$gray4" elevation="$4" >
-      <H4 color="$gray9">
-        {letter}
-      </H4>
+  return image ? (
+    <Image width={56} height={56} src={image} />
+  ) : (
+    <Circle size={56} bc='$gray4' elevation='$4'>
+      <H4 color='$gray9'>{letter}</H4>
     </Circle>
   )
 }

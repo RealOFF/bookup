@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { XGroup, ButtonText } from "tamagui"
+import { useState } from 'react'
+import { XGroup, ButtonText } from 'tamagui'
 
 type Props = {
   items: {
@@ -18,18 +18,18 @@ export const UnderlineMenu = ({ items, onItemClick }: Props) => {
   }
 
   return (
-    <XGroup maw={600} space br="$0" size="$3">
-      {items.map(({ title, props }, index) =>
+    <XGroup maw={600} space br='$0' size='$3'>
+      {items.map(({ title, props }, index) => (
         <ButtonText
-          cursor="pointer"
+          cursor='pointer'
           key={title}
           onPress={() => onClick(index)}
-          borderBottomWidth={items[selected]?.title === title ? "$1" : ''}
+          borderBottomWidth={items[selected]?.title === title ? '$1' : ''}
           {...props}
         >
           {title}
         </ButtonText>
-      )}
+      ))}
     </XGroup>
   )
 }

@@ -1,4 +1,13 @@
-import { Sheet, YStack, Button, XStack, Paragraph, H4, Separator, Square } from '@bookup/uikit'
+import {
+  Sheet,
+  YStack,
+  Button,
+  XStack,
+  Paragraph,
+  H4,
+  Separator,
+  Square,
+} from '@bookup/uikit'
 import { useState } from 'react'
 
 import { UserImage } from 'app/features/user'
@@ -20,7 +29,7 @@ const SOCIALS = {
   },
   viber: {
     title: 'Viber',
-  }
+  },
 }
 
 export const RequestDetails = ({ isOpen, onClose, id }: Props) => {
@@ -29,12 +38,7 @@ export const RequestDetails = ({ isOpen, onClose, id }: Props) => {
 
   if (!data) return null
 
-  const {
-    services,
-    user,
-    start,
-    socials
-  } = data
+  const { services, user, start, socials } = data
 
   return (
     <Sheet
@@ -48,7 +52,7 @@ export const RequestDetails = ({ isOpen, onClose, id }: Props) => {
     >
       <Sheet.Overlay />
       <Sheet.Handle />
-      <Sheet.Frame ai="center" jc="center">
+      <Sheet.Frame ai='center' jc='center'>
         <Sheet.ScrollView style={{ width: '100%', height: 1000 }}>
           <XStack py='$8' jc='center' w='100%'>
             <YStack maw={600} w='100%'>
@@ -56,51 +60,52 @@ export const RequestDetails = ({ isOpen, onClose, id }: Props) => {
                 <H4>{timestampToDateString(start)}</H4>
                 <XStack py='$4' ai='center' space>
                   <UserImage letter={user.firstName[0]} />
-                  <Paragraph theme="alt2">{user.firstName} {user.lastName}</Paragraph>
+                  <Paragraph theme='alt2'>
+                    {user.firstName} {user.lastName}
+                  </Paragraph>
                 </XStack>
-                {services.map(({ name, price, duration }) =>
+                {services.map(({ name, price, duration }) => (
                   <>
                     <Separator />
                     <YStack py='$3' key={name}>
                       <XStack jc='space-between'>
                         <Paragraph>{name}</Paragraph>
-                        <Paragraph>{price.amount} {price.currancy}</Paragraph>
+                        <Paragraph>
+                          {price.amount} {price.currancy}
+                        </Paragraph>
                       </XStack>
-                      <Paragraph theme='alt2'>{timestampToTimeString(duration)}</Paragraph>
+                      <Paragraph theme='alt2'>
+                        {timestampToTimeString(duration)}
+                      </Paragraph>
                     </YStack>
                   </>
-                )}
+                ))}
                 <Separator />
                 <XStack pt='$3' pb='$5' jc='space-between'>
                   <Paragraph fow='600'>Result</Paragraph>
                   <Paragraph fow='600'>
-                    {
-                      services.reduce((sum, { price }) => sum + price.amount, 0)
-                    } {services[0]?.price.currancy}
+                    {services.reduce((sum, { price }) => sum + price.amount, 0)}{' '}
+                    {services[0]?.price.currancy}
                   </Paragraph>
                 </XStack>
-                <XStack dsp='flex' space mt="$2">
-                  <Button f={1}>
-                    Accept
-                  </Button>
-                  <Button f={1}>
-                    Reject
-                  </Button>
+                <XStack dsp='flex' space mt='$2'>
+                  <Button f={1}>Accept</Button>
+                  <Button f={1}>Reject</Button>
                 </XStack>
               </YStack>
-              <YStack h='$16' px='$4' py='$4' bg="$gray3">
+              <YStack h='$16' px='$4' py='$4' bg='$gray3'>
                 <Paragraph fos='$1' theme='alt2'>
                   Connect:
                 </Paragraph>
                 <XStack space>
-                  {socials.map(({ type }) =>
+                  {socials.map(({ type }) => (
                     <YStack ai='center' key={type}>
-                      <Square br='$2' size={50} bc="$color" elevation="$4" />
+                      <Square br='$2' size={50} bc='$color' elevation='$4' />
                       <Paragraph fos='$1' theme='alt2'>
                         {SOCIALS[type]?.title}
                       </Paragraph>
                     </YStack>
-                  )}
+                  ))}
                 </XStack>
               </YStack>
             </YStack>

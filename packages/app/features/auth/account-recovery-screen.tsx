@@ -12,8 +12,8 @@ const FillCodeBlock = () => {
   const onSubmit = (data) => console.log(data)
 
   return (
-    <YStack space="$2">
-      <Paragraph ta="center">Enter the received code</Paragraph>
+    <YStack space='$2'>
+      <Paragraph ta='center'>Enter the received code</Paragraph>
       <Controller
         control={control}
         rules={{
@@ -24,17 +24,17 @@ const FillCodeBlock = () => {
         render={({ field: { onChange, onBlur, value } }) => (
           //TODO rework to 5 inputs
           <Input
-            textContentType="postalCode"
-            keyboardType="number-pad"
-            placeholder="code"
+            textContentType='postalCode'
+            keyboardType='number-pad'
+            placeholder='code'
             onBlur={onBlur}
             onChangeText={onChange}
             value={value}
           />
         )}
-        name="code"
+        name='code'
       />
-      <ButtonText mt="$1" ta="center">
+      <ButtonText mt='$1' ta='center'>
         Send code again
       </ButtonText>
       <Button onClick={() => handleSubmit(onSubmit)}>Accept</Button>
@@ -49,18 +49,20 @@ export function AccountRecoveryScreen() {
   }
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" space>
-      <YStack space="$4" maw={600}>
-        <H3 ta="center">Account recovery</H3>
+    <YStack f={1} jc='center' ai='center' p='$4' space>
+      <YStack space='$4' maw={600}>
+        <H3 ta='center'>Account recovery</H3>
       </YStack>
 
-      <YStack w={'100%'} space="$4" maw={600}>
-        <Input placeholder="Email" />
+      <YStack w="100%" space='$4' maw={600}>
+        <Input placeholder='Email' />
         {isSent ? (
           <FillCodeBlock />
         ) : (
           <>
-            <Paragraph ta="center">We will send recovery code to your email</Paragraph>
+            <Paragraph ta='center'>
+              We will send recovery code to your email
+            </Paragraph>
             <Button onClick={handleSend}>Send</Button>
           </>
         )}

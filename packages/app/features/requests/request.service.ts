@@ -5,21 +5,21 @@ const requests = [
     user: {
       id: 1,
       firstName: 'Mike',
-      lastName: 'Brintenburg'
+      lastName: 'Brintenburg',
     },
     socials: [
       {
         type: 'telegram',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'whatsapp',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'viber',
-        url: 'https://google.com'
-      }
+        url: 'https://google.com',
+      },
     ],
     services: [
       {
@@ -27,7 +27,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -35,7 +35,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -43,11 +43,12 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
     ],
-    comment: 'Some comment from me. Some comment from me. Some comment from me.'
+    comment:
+      'Some comment from me. Some comment from me. Some comment from me.',
   },
   {
     id: 1,
@@ -55,21 +56,21 @@ const requests = [
     user: {
       id: 1,
       firstName: 'Mike',
-      lastName: 'Brintenburg'
+      lastName: 'Brintenburg',
     },
     socials: [
       {
         type: 'telegram',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'whatsapp',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'viber',
-        url: 'https://google.com'
-      }
+        url: 'https://google.com',
+      },
     ],
     services: [
       {
@@ -77,7 +78,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -85,7 +86,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -93,11 +94,12 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
     ],
-    comment: 'Some comment from me. Some comment from me. Some comment from me.'
+    comment:
+      'Some comment from me. Some comment from me. Some comment from me.',
   },
   {
     id: 2,
@@ -105,21 +107,21 @@ const requests = [
     user: {
       id: 2,
       firstName: 'Mike',
-      lastName: 'Brintenburg'
+      lastName: 'Brintenburg',
     },
     socials: [
       {
         type: 'telegram',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'whatsapp',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'viber',
-        url: 'https://google.com'
-      }
+        url: 'https://google.com',
+      },
     ],
     services: [
       {
@@ -127,7 +129,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -135,7 +137,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -143,11 +145,12 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
     ],
-    comment: 'Some comment from me. Some comment from me. Some comment from me.'
+    comment:
+      'Some comment from me. Some comment from me. Some comment from me.',
   },
   {
     id: 3,
@@ -155,21 +158,21 @@ const requests = [
     user: {
       id: 2,
       firstName: 'Mike',
-      lastName: 'Brintenburg'
+      lastName: 'Brintenburg',
     },
     socials: [
       {
         type: 'telegram',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'whatsapp',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'viber',
-        url: 'https://google.com'
-      }
+        url: 'https://google.com',
+      },
     ],
     services: [
       {
@@ -177,7 +180,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -185,7 +188,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -193,11 +196,12 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
     ],
-    comment: 'Some comment from me. Some comment from me. Some comment from me.'
+    comment:
+      'Some comment from me. Some comment from me. Some comment from me.',
   },
   {
     id: 4,
@@ -205,21 +209,21 @@ const requests = [
     user: {
       id: 2,
       firstName: 'Mike',
-      lastName: 'Brintenburg'
+      lastName: 'Brintenburg',
     },
     socials: [
       {
         type: 'telegram',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'whatsapp',
-        url: 'https://google.com'
+        url: 'https://google.com',
       },
       {
         type: 'viber',
-        url: 'https://google.com'
-      }
+        url: 'https://google.com',
+      },
     ],
     services: [
       {
@@ -227,7 +231,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -235,7 +239,7 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
       {
@@ -243,12 +247,13 @@ const requests = [
         duration: 60 * 60,
         price: {
           amount: 10,
-          currancy: 'USD'
+          currancy: 'USD',
         },
       },
     ],
-    comment: 'Some comment from me. Some comment from me. Some comment from me.'
-  }
+    comment:
+      'Some comment from me. Some comment from me. Some comment from me.',
+  },
 ]
 
 type RequestQueryParams = {
@@ -256,11 +261,10 @@ type RequestQueryParams = {
 }
 
 export const useRequests = (params?: RequestQueryParams) => {
-
   return {
-    data: params?.userId ?
-      requests.filter(({ user }) => user.id === params?.userId) :
-      requests
+    data: params?.userId
+      ? requests.filter(({ user }) => user.id === params?.userId)
+      : requests,
   }
 }
 

@@ -9,7 +9,7 @@ export function Provider({
     <TamaguiProvider
       config={config}
       disableInjectCSS
-      defaultTheme="light"
+      defaultTheme='light'
       {...rest}
     >
       {children}
