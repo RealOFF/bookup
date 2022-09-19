@@ -35,7 +35,15 @@ type Props = {
   comment: string
 }
 
-export const RequestCard = ({ start, user, services, id, useUserImage, useUserName, useInteractable }: Props) => {
+export const RequestCard = ({
+  start,
+  user,
+  services,
+  id,
+  useUserImage,
+  useUserName,
+  useInteractable,
+}: Props) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -44,7 +52,11 @@ export const RequestCard = ({ start, user, services, id, useUserImage, useUserNa
         {useUserImage ? <UserImage letter={user.firstName[0]} /> : null}
         <YStack>
           <H4>{timestampToDateString(start)}</H4>
-          {useUserName ? <Paragraph theme="alt2">{user.firstName} {user.lastName}</Paragraph> : null}
+          {useUserName ? (
+            <Paragraph theme='alt2'>
+              {user.firstName} {user.lastName}
+            </Paragraph>
+          ) : null}
           <Paragraph>{services.map(({ name }) => name).join(', ')}</Paragraph>
           <Paragraph>
             <SizableText color='$gray10'>
@@ -57,15 +69,12 @@ export const RequestCard = ({ start, user, services, id, useUserImage, useUserNa
               {services[0]?.price.currancy}
             </SizableText>
           </Paragraph>
-          {useInteractable ? <XStack mt="$2" space>
-            <Button>
-              Accept
-            </Button>
-            <Button>
-              Reject
-            </Button>
-          </XStack>
-            : null}
+          {useInteractable ? (
+            <XStack mt='$2' space>
+              <Button>Accept</Button>
+              <Button>Reject</Button>
+            </XStack>
+          ) : null}
         </YStack>
       </XStack>
       <RequestDetails id={id} onClose={setIsOpen} isOpen={isOpen} />

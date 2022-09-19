@@ -6,8 +6,8 @@ export const Requests = () => {
   const { data: requests } = useRequests()
 
   return (
-    <YStack ai="center" py="$5" px="$3" space>
-      {requests.map((item) =>
+    <YStack ai='center' py='$5' px='$3' space>
+      {requests.map((item) => (
         <RequestCard
           useUserImage
           useUserName
@@ -15,7 +15,7 @@ export const Requests = () => {
           key={`${item.id}`}
           {...item}
         />
-      )}
+      ))}
     </YStack>
   )
 }

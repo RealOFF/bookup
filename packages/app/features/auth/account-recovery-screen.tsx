@@ -54,7 +54,7 @@ export function AccountRecoveryScreen() {
         <H3 ta='center'>Account recovery</H3>
       </YStack>
 
-      <YStack w="100%" space='$4' maw={600}>
+      <YStack w='100%' space='$4' maw={600}>
         <Input placeholder='Email' />
         {isSent ? (
           <FillCodeBlock />

@@ -12,7 +12,7 @@ export function CreateNewPasswordScreen() {
       <YStack space='$4' maw={600}>
         <H3 ta='center'>Create new password</H3>
       </YStack>
-      <YStack w="100%" space='$4' maw={600}>
+      <YStack w='100%' space='$4' maw={600}>
         <Input textContentType='newPassword' placeholder='New password' />
         <Input
           textContentType='newPassword'

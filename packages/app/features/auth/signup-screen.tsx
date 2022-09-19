@@ -14,7 +14,7 @@ export function SignupScreen() {
         </YStack>
       </XStack>
 
-      <YStack w="100%" space='$4' maw={600}>
+      <YStack w='100%' space='$4' maw={600}>
         <Input keyboardType='email-address' placeholder='Email' />
         <Input textContentType='newPassword' placeholder='Password' />
         <Input textContentType='newPassword' placeholder='Repeat password' />
