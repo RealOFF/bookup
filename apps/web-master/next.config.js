@@ -11,6 +11,18 @@ if (disableExtraction) {
   console.log('Disabling static extraction in development mode for better HMR')
 }
 
+const redirects = {
+  redirects: async () => {
+    return [
+      {
+        source: '/profile',
+        destination: '/auth/login',
+        permanent: true,
+      },
+    ]
+  }
+}
+
 const transform = withPlugins([
   withTM([
     'solito',
@@ -45,6 +57,7 @@ const transform = withPlugins([
       'SectionList',
     ],
   }),
+  [redirects]
 ])
 
 module.exports = function (name, { defaultConfig }) {

@@ -1,3 +1,3 @@
-import { SignupScreen } from 'app/features/auth/signup-screen'
+import { SignupScreen } from 'app/features/auth'
 
 export default SignupScreen

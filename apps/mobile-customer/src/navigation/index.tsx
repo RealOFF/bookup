@@ -1,17 +1,11 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import { HomeScreen } from 'app/features/home/screen'
-import { UserDetailScreen } from 'app/features/user/detail-screen'
 import { LoginScreen } from 'app/features/auth/login-screen'
 import { SignupScreen } from 'app/features/auth/signup-screen'
-import { AccountRecoveryScreen } from 'app/features/auth/account-recovery'
+import { AccountRecoveryScreen } from 'app/features/auth/account-recovery-screen'
 
 const Stack = createNativeStackNavigator<{
-  home: undefined
-  'user-detail': {
-    id: string
-  }
   login: undefined
   signup: undefined
   'account-recovery': undefined
@@ -39,20 +33,6 @@ export function NativeNavigation() {
         component={AccountRecoveryScreen}
         options={{
           title: 'AccountRecovery',
-        }}
-      />
-      <Stack.Screen
-        name="home"
-        component={HomeScreen}
-        options={{
-          title: 'Home',
-        }}
-      />
-      <Stack.Screen
-        name="user-detail"
-        component={UserDetailScreen}
-        options={{
-          title: 'User',
         }}
       />
     </Stack.Navigator>

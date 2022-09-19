@@ -2,7 +2,7 @@ import { Input, Button, H3, XStack, YStack } from '@bookup/uikit'
 import React from 'react'
 import { useLink } from 'solito/link'
 
-export function CreateNewPassword() {
+export function CreateNewPasswordScreen() {
   const loginLinkProps = useLink({
     href: '/auth/login',
   })

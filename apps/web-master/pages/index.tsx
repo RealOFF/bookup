@@ -1,3 +1,3 @@
-import { HomeScreen } from 'app/features/home/screen'
+import { BusinessDashboard } from 'app/features/business-dashboard'
 
-export default HomeScreen
+export default BusinessDashboard
